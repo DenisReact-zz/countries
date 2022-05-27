@@ -1,0 +1,25 @@
+.firstList,
+.secondList {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+.firstList li,
+.secondList li {
+  font-size: 16px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+.firstList li span,
+.secondList li span {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.secondList {
+  margin-top: 20px;
+}
+
+.sceletonUl span {
+  margin-bottom: 7px;
+}
