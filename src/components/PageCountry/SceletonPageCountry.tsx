@@ -6,11 +6,16 @@ import styles from "./PageCountry.module.css";
 const SceletonPageCountry = () => {
   return (
     <>
-      <Typography variant="h3">
-        <Skeleton animation="wave" height={42} width={400} variant="text" />
-      </Typography>
+      <Skeleton
+        sx={{ mt: 5 }}
+        animation="wave"
+        height={56}
+        width={400}
+        variant="text"
+      />
 
       <Box
+        className={styles.topBlock}
         sx={{
           width: "100%",
           display: "flex",
@@ -19,6 +24,7 @@ const SceletonPageCountry = () => {
         }}
       >
         <Skeleton
+          className={styles.wrappFlag}
           sx={{ mr: 10 }}
           animation="wave"
           height={250}
@@ -38,6 +44,7 @@ const SceletonPageCountry = () => {
         </ul>
       </Box>
       <Box
+        className={styles.bottomBlock}
         sx={{
           width: "100%",
           display: "flex",
@@ -58,6 +65,7 @@ const SceletonPageCountry = () => {
           <Skeleton animation="wave" height={27} width={300} variant="text" />
         </ul>
         <Skeleton
+          className={styles.wrappGerb}
           sx={{ ml: "auto" }}
           animation="wave"
           height={300}

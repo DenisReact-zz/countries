@@ -45,7 +45,11 @@ const Home = () => {
 
   return (
     <>
-      <Typography sx={{ mt: 5, mb: 5 }} variant="h3" component="h3">
+      <Typography
+        sx={{ pr: 5, pl: 5, mt: 5, mb: 5, textAlign: "center" }}
+        variant="h3"
+        component="h3"
+      >
         Information about all countries
         <span style={{ color: theme.palette["primary"].main }}> here</span>
       </Typography>
@@ -55,11 +59,11 @@ const Home = () => {
         InputLabelProps={{ shrink: true }}
         autoFocus
         onChange={debouncedChangeHandler}
-        sx={{ width: "1000px", mb: 7, borderRadius: 3 }}
+        sx={{ mb: 7, borderRadius: 3 }}
         label="Find country"
         variant="outlined"
       />
-      <Box sx={{ position: "relative", width: "900px" }}>
+      <Box className={styles.wrapperCards}>
         {currentCountries?.length > 0 && errorSearch?.length === 0 ? (
           currentCountries
             .slice(0, 10)

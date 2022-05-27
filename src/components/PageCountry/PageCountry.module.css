@@ -23,3 +23,24 @@
 .sceletonUl span {
   margin-bottom: 7px;
 }
+
+@media screen and (max-width: 1100px) {
+  .topBlock {
+    flex-direction: column !important;
+    width: 95vw !important;
+  }
+  .bottomBlock {
+    flex-direction: column-reverse !important;
+    width: 95vw !important;
+  }
+  .wrappFlag {
+    margin-bottom: 40px;
+    width: 95vw !important;
+    height: 80vw !important;
+  }
+  .wrappGerb {
+    margin-bottom: 40px;
+    width: 95vw !important;
+    height: 90vw !important;
+  }
+}

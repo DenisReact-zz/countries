@@ -1,3 +1,17 @@
+.search {
+  width: 1000px;
+}
 .search fieldset {
   border-radius: 12px;
+}
+.wrapperCards {
+  width: 900px;
+}
+@media screen and (max-width: 1100px) {
+  .search {
+    width: 95vw;
+  }
+  .wrapperCards {
+    width: 90vw;
+  }
 }

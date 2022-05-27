@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import React, { FC } from "react";
+import { FC } from "react";
 import { Obj } from "../../types";
 import styles from "./PageCountry.module.css";
 
@@ -30,6 +30,7 @@ const PageCountry: FC<PropsPageCountry> = ({ dataCountry }) => {
       )}
 
       <Box
+        className={styles.topBlock}
         sx={{
           width: "100%",
           display: "flex",
@@ -39,6 +40,7 @@ const PageCountry: FC<PropsPageCountry> = ({ dataCountry }) => {
       >
         {dataCountry?.flags?.svg && (
           <Box
+            className={styles.wrappFlag}
             sx={{
               display: "flex",
               alignItems: "center",
@@ -54,7 +56,7 @@ const PageCountry: FC<PropsPageCountry> = ({ dataCountry }) => {
           >
             <img
               style={{
-                width: "250px",
+                width: "85%",
                 borderRadius: "15px",
               }}
               src={dataCountry?.flags?.svg}
@@ -73,6 +75,7 @@ const PageCountry: FC<PropsPageCountry> = ({ dataCountry }) => {
         </ul>
       </Box>
       <Box
+        className={styles.bottomBlock}
         sx={{
           width: "100%",
           display: "flex",
@@ -98,6 +101,7 @@ const PageCountry: FC<PropsPageCountry> = ({ dataCountry }) => {
 
         {dataCountry?.coatOfArms?.svg && (
           <Box
+            className={styles.wrappGerb}
             sx={{
               display: "flex",
               alignItems: "center",
@@ -113,8 +117,8 @@ const PageCountry: FC<PropsPageCountry> = ({ dataCountry }) => {
           >
             <img
               style={{
-                width: "250px",
-                height: "250px",
+                width: "85%",
+                height: "85%",
                 borderRadius: "15px",
                 objectFit: "contain",
               }}

@@ -5,6 +5,7 @@ import SceletonPageCountry from "../../components/PageCountry/SceletonPageCountr
 import PageCountry from "../../components/PageCountry";
 import { Obj } from "../../types";
 import { useSelector } from "react-redux";
+import styles from "./Country.module.css";
 
 const Country = () => {
   const countriesState = useSelector((state: Obj) => state.countries);
@@ -35,6 +36,7 @@ const Country = () => {
 
   return (
     <Box
+      className={styles.countryWrapper}
       sx={{
         width: "1000px",
         ml: "auto",
