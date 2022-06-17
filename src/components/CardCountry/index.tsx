@@ -29,6 +29,10 @@ const CardCountry: FC<CardCountryProps> = ({ countryName, flagImg, link }) => {
               p: "15px",
               boxSizing: "border-box",
               mb: 5,
+              transition: ".4s",
+              "&:hover": {
+                background: `rgba(0,0,0,0.5)`,
+              },
             }}
           >
             <Typography color="white">
